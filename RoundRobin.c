@@ -135,7 +135,7 @@ void roundRobin() {
     } while (track < SIZE);
     for (i = 0; i < SIZE; i++) {
         printf("\nCompleted %d in %d time \n", i, comp_time[i]);
-        printf("\nProcess %d waited for %d time \n", i, Process[i][2]);
+        //printf("\nProcess %d waited for %d time \n", i, Process[i][2]);
         Process[i][3] = comp_time[i] - Process[i][0]; // Calculate turnaround time
         Process[i][2] = Process[i][3] - Process[i][1]; // Calculate wait time
     }
